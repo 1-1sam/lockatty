@@ -1,4 +1,6 @@
 # lockatty
+<a> <img src=lockatty-scrot.png></a>
+
 lockatty is a simple screenlocker for Linux terminals.
 ## Usage
 Your first run will prompt you to set a password. lockatty will use its own password as opposed to your user's system password. If you wish to reset your password, you may delete the pw file that was placed in your home's .lockatty folder.
