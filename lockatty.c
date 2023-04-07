@@ -118,7 +118,6 @@ int check_file(char* filename) {
     return 0;
 }
 
-/* Occasional memory leaks here */
 void cat_echo() {
     FILE* echo;
     char buf[1024];
