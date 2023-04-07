@@ -157,7 +157,6 @@ int pwcmp(char* guess) {
         strcat(guess_md5,tmp02x);
     }
 
-    /* A d is added to the beginning of the guess_md5. This only happens in tty, not tmux */
     guess_md5[MD5_LEN] = '\0';
 
     if ((strcmp(buf,guess_md5)) == STRCMP_EQUAL) {
