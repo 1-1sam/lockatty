@@ -10,6 +10,7 @@ Required dependencies are openssl and ncurses.
 This will install it into /usr/local.
 ```bash
 make
+make install # as root
 make clean
 ```
 You may edit the DESTDIR and PREFIX variable to install it in your preferred directory.
