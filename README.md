@@ -7,6 +7,7 @@ Your first run will prompt you to set a password. lockatty will use its own pass
 lockatty will also look for a file named "echo" in your .lockatty folder. Your echo file should be a simple ascii text file. The contents of this echo file will outputted to the prompt of lockatty. This feature is optional.
 ## Install
 Required dependencies are openssl and ncurses.
+
 This will install it into /usr/local.
 ```bash
 make
