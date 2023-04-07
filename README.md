@@ -7,12 +7,11 @@ lockatty will also look for a file named "echo" in your .lockatty folder. Your e
 This will install it into /usr/local.
 ```bash
 make
-make install doc # doc is not necessary but recommended.
 make clean
 ```
 You may edit the DESTDIR and PREFIX variable to install it in your preferred directory.
 ```bash
-make install doc DESTDIR=build PREFIX=/usr
+make install DESTDIR=build PREFIX=/usr
 ```
 If you wish to uninstall:
 ```bash
