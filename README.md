@@ -26,7 +26,7 @@ make uninstall
 ## TODO
 
 * [ ] Add support for user's system passwords.
-* [ ] Add support for other hashing algorithims besiders md5.
+* [ ] Add support for other hashing algorithims besides md5.
 
 ## License
 [GPL-3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
