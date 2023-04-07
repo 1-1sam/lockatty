@@ -3,7 +3,7 @@
 
 lockatty is a simple screenlocker for Linux terminals.
 ## Usage
-Your first run will prompt you to set a password. lockatty will use its own password as opposed to your user's system password. If you wish to reset your password, you may delete the pw file that was placed in your home's .lockatty folder.
+Your first run will prompt you to set a password. lockatty will use its own password, it will not use your user's system password. If you wish to reset your password, you may delete the pw file that was placed in your home's .lockatty folder.
 lockatty will also look for a file named "echo" in your .lockatty folder. Your echo file should be a simple ascii text file. The contents of this echo file will outputted to the prompt of lockatty. This feature is optional.
 ## Install
 Required dependencies are openssl and ncurses.
