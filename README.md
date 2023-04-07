@@ -18,4 +18,4 @@ If you wish to uninstall:
 make uninstall
 ```
 ## License
-[GPL-3](https://www.gnu.org/licenses/gpl-3.0-standalone.html
+[GPL-3](https://www.gnu.org/licenses/gpl-3.0-standalone.html)
