@@ -1,7 +1,0 @@
-These two files, echo and pw, are the only files that should be located in home's .lockatty folder. The pw file
-contains the md5 hash of your password. The example included is the hash of the password "Password". If you wish
-to reset your password, all you have to do is delete the pw file and the program will prompt you for a new password. 
-
-The echo file contains text that will be outputted when lockatty prompts you for a password. The example echo file
-contains an ascii Slackware logo (credit to dylanaraps, from his neofetch program). 
-
