@@ -1,1 +1,76 @@
+.TH LOCKATTY 1 "2023 April" "lockatty 1.0.0"
+.SH NAME
+lockatty \- Simple terminal screen locker.
 
+.SH SYNOPSIS
+.SY lockatty
+.RI [OPTIONS]
+
+.SH DESCRIPTION
+.PP
+.B lockatty
+is a simple screenlocker for Linux terminals. It supports
+customizable prompts and program-specific passwords.
+
+.SH OPTIONS
+.PP
+.B -e, --echo=FILE
+.IP
+Echoes the contents of a given ascii file for the password prompt.
+The absolute path for the file must be given.
+.PP
+.B -l, --lockatty-pw
+.IP
+Use a password set just for lockatty rather than the user's
+system password. lockatty passwords have a 50 character limit.
+Can be reset by deleting the ~/.pw file.
+.PP
+.B -n, --no-text-prompt
+.IP
+Does not print text asking for the password. Will still print
+text informing the user of an incorrect password attempt.
+.PP
+.B -?, --help
+.IP
+Prints help message.
+.PP
+.B --usage
+.IP
+Prints short usage message.
+.PP
+.B -V, --version
+.IP
+Prints program version.
+
+.SH FILES
+.PP
+.I ~/.pw
+.IP
+File that stores the md5 hash of your lockatty password. If this
+file is deleted, lockatty will ask you for a new password the next
+time you run it with -l or --lockatty-pw.
+
+.SH AUTHORS
+Written by Samuel Young.
+.IR <samyoung12788@gmail.com>
+
+.SH BUGS
+Report bugs to my email
+.IR <samyoung12788@gmail.com>
+.sp
+or my github
+.IR <https://github.com/1-1sam>
+
+.SH COPYRIGHT
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
