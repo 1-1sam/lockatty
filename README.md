@@ -24,6 +24,11 @@ You may edit the DESTDIR and PREFIX variable to install it in your preferred dir
 ```bash
 make install DESTDIR=build PREFIX=/usr
 ```
+It is recommended you install the documentation.
+```bash
+make install-doc DESTDIR=build PREFIX=/usr
+```
+
 If you wish to uninstall:
 ```bash
 make uninstall # Make sure you specify DESTDIR and PREFIX if they were used during the make install.
