@@ -1,17 +1,24 @@
-PROG=lockatty
 PREFIX=/usr/local
 BINDIR=$(PREFIX)/bin
+MANDIR=$(PREFIX)/share/man
 
-$(PROG): lockatty.c
-	cc lockatty.c -lcrypto -lncurses -o lockatty
+build: src/Makefile
+	make -C src
 
 install:
-	chmod 755 $(PROG)
 	mkdir -p $(DESTDIR)$(BINDIR)
-	cp $(PROG) $(DESTDIR)$(BINDIR)/$(PROG)
+	install -m 4755 -o root -g root src/lockatty $(DESTDIR)$(BINDIR)/lockatty
+
+install-doc:
+	mkdir -p $(DESTDIR)$(MANDIR)/man1
+	install -o root -m 755 man/lockatty.1 $(DESTDIR)$(MANDIR)/man1
+	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/lockatty-1.0.0
+	install -o root -m 755 LICENSE $(DESTDIR)$(PREFIX)/share/doc/lockatty-1.0.0
 
 clean:
-	rm lockatty
+	rm src/lockatty src/*.o
 
 uninstall:
-	rm -rf $(DESTDIR)$(BINDIR)/$(PROG)
+	rm -rf $(DESTDIR)$(BINDIR)/lockatty
+	rm -f $(DESTDIR)$(MANDIR)/man1/lockatty.1
+	rm -rf $(DESTDIR)$(PREFIX)/share/doc/lockatty-1.0.0
