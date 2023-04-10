@@ -8,7 +8,7 @@
 * Warning for passwords that exceed the 50 character limit.
 
 ## Changes
-* Seperated lockatty.c into multiple c and header files in src directory.
+* Separated lockatty.c into multiple c and header files in src directory.
 * The echo file is now a program option which accepts any ascii file passed to it.
 * ~/.lockatty/pw is now ~/.pw.
 * Updated Makefile.
