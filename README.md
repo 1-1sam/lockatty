@@ -1,3 +1,5 @@
+# Migrated to https://codeberg.org/1-1sam/lockatty
+
 # lockatty
 <a> <img src=lockatty-scrot.png></a>
 
